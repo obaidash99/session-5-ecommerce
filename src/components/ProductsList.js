@@ -32,7 +32,14 @@ function ProductsList() {
 		<>
 			<h2 className="text-center p-3">Our Products</h2>
 			<div className="container">
-				<button className="btn btn-danger">All</button>
+				<button
+					className="btn btn-danger"
+					onClick={() => {
+						getProducts();
+					}}
+				>
+					All
+				</button>
 				{categories.map((cat) => (
 					<button
 						className="btn btn-info"
